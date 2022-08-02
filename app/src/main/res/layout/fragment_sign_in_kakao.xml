@@ -7,16 +7,17 @@
     android:paddingHorizontal="@dimen/activity_horizontal_margin"
     tools:context=".src.fragment.sign_in_kakao.controller.SignInKakaoFragment">
 
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintBottom_toTopOf="@+id/sign_in_view_line"
+        app:layout_constraintBottom_toTopOf="@+id/sign_in_kakao_view_line"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
-            android:id="@+id/sign_in_img_logo"
+            android:id="@+id/sign_in_kakao_img_logo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="80dp"
@@ -25,83 +26,43 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <EditText
-            android:id="@+id/sign_in_edit_txt_id_input"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
-            android:background="@drawable/edit_txt_background1"
-            android:hint="전화번호, 사용자 이름 또는 이메일"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/sign_in_img_logo" />
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/sign_in_layout_password_input"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/activity_vertical_margin"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/sign_in_edit_txt_id_input">
-
-            <EditText
-                android:id="@+id/sign_in_edit_txt_password_input"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:background="@drawable/edit_txt_background1"
-                android:hint="비밀번호"
-                android:inputType="textPassword"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <CheckBox
-                android:id="@+id/sign_in_check_password_selector"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_marginEnd="10dp"
-                android:background="@drawable/password_selector"
-                android:button="@null"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
         <TextView
-            android:id="@+id/sign_in_txt_find_password"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/activity_vertical_margin"
-            android:text="비밀번호를 잊으셨나요?"
-            android:textColor="@color/blue1"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/sign_in_layout_password_input" />
-
-        <Button
-            android:id="@+id/sign_in_btn_login"
+            android:id="@+id/sign_in_kakao_txt"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="28dp"
-            android:backgroundTint="@color/blue2"
-            android:text="로그인"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:text="친구들의 사진과 동영상을 보려면 가입하세요."
+            android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/sign_in_txt_find_password" />
+            app:layout_constraintTop_toBottomOf="@+id/sign_in_kakao_img_logo" />
+
+        <TextView
+            android:id="@+id/sign_in_kakao_txt_sign_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="휴대폰 번호 또는 이메일 주소로 가입"
+            android:textColor="@color/blue1"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sign_in_kakao_layout_or" />
 
         <LinearLayout
-            android:id="@+id/sign_in_layout_or"
+            android:id="@+id/sign_in_kakao_layout_or"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/button_margin_top1"
+            android:layout_marginTop="50dp"
             android:gravity="center_vertical"
             android:orientation="horizontal"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/sign_in_btn_login">
+            app:layout_constraintTop_toBottomOf="@+id/sign_in_btn_kakao_login">
 
             <View
                 android:layout_width="0dp"
@@ -130,18 +91,16 @@
             android:id="@+id/sign_in_btn_kakao_login"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/button_margin_top1"
-            android:src="@drawable/kakao_login_medium_narrow"
+            android:layout_marginTop="80dp"
+            android:src="@drawable/kakao_login_large_wide"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/sign_in_layout_or" />
+            app:layout_constraintTop_toBottomOf="@+id/sign_in_kakao_txt" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-
-
     <View
-        android:id="@+id/sign_in_view_line"
+        android:id="@+id/sign_in_kakao_view_line"
         android:layout_width="0dp"
         android:layout_height="1dp"
         android:layout_marginVertical="@dimen/button_margin_top1"
@@ -163,15 +122,15 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="계정이 없으신가요?"
+            android:text="이미 계정이 있으신가요??"
             android:textColor="@color/gray2" />
 
         <TextView
-            android:id="@+id/sign_in_txt_sign_up"
+            android:id="@+id/sign_in_kakao_txt_sign_in"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="5dp"
-            android:text="가입하기"
+            android:text="로그인"
             android:textColor="@color/blue1"
             android:textStyle="bold" />
     </LinearLayout>

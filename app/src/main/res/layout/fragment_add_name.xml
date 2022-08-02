@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingVertical="@dimen/activity_vertical_margin"
+    tools:context=".src.fragment.add_name.controller.AddNameFragment">
+
+
+    <TextView
+        android:id="@+id/add_name_txt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="이름 추가"
+        android:textColor="@color/black"
+        android:paddingHorizontal="40dp"
+        android:layout_marginTop="@dimen/button_margin_top1"
+        android:textSize="@dimen/title_text_size"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/add_name_txt2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="친구들이 회원님을 찾을 수 있도록 이름을 추가하세요."
+        android:layout_marginTop="@dimen/button_margin_top1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add_name_txt" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/add_name_layout_input_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="40dp"
+        android:layout_marginTop="@dimen/button_margin_top1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add_name_txt2">
+
+        <EditText
+            android:id="@+id/add_name_edit_txt_input_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_txt_background1"
+            android:hint="이름"
+            android:inputType="textPassword"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/add_name_img_btn_delete"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:layout_marginHorizontal="40dp"
+        android:id="@+id/certification_phone_btn_next"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/blue2"
+        android:text="다음"
+        android:paddingVertical="15dp"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add_name_layout_input_name" />
+
+    <View
+        android:id="@+id/add_name_view_line"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginVertical="@dimen/button_margin_top1"
+        android:background="@color/gray1"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="이미 계정이 있으신가요?"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/add_name_txt_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="로그인"
+            android:textColor="@color/blue1"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
