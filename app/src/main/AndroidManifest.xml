@@ -10,10 +10,11 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Gridge_test"
+        android:name=".config.ApplicationClass"
         android:networkSecurityConfig="@xml/network_security_config"
         android:screenOrientation="portrait">
         <activity
+            android:theme="@style/Theme.Gridge_test.Starting"
             android:name=".src.main.controller.MainActivity"
             android:exported="true">
             <intent-filter>

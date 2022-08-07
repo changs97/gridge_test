@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingHorizontal="@dimen/activity_horizontal_margin"
-    tools:context=".src.fragment.sign_in_kakao.controller.SignInKakaoFragment">
+    tools:context=".src.fragment.sign_in.controller.SignInFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="0dp"

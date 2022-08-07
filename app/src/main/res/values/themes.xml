@@ -15,4 +15,11 @@
         <!-- Customize your theme here. -->
         <item name="android:windowBackground">?attr/colorOnPrimary</item>
     </style>
+    <style name="Theme.Gridge_test.Starting" parent="Theme.SplashScreen" >
+        <item name="windowSplashScreenBackground">@color/white</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/splash_meta</item>
+        <item name="windowSplashScreenAnimationDuration">1000</item>
+        <item name="android:windowSplashScreenBrandingImage" tools:targetApi="s">@drawable/splash_logo</item>
+        <item name="postSplashScreenTheme">@style/Theme.Gridge_test</item>
+    </style>
 </resources>
